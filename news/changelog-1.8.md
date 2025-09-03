@@ -8,6 +8,10 @@ All changes included in 1.8:
 - ([#12780](https://github.com/quarto-dev/quarto-cli/issues/12780)): `keep-ipynb: true` now works again correctly and intermediate `.quarto_ipynb` is not removed.
 - ([#13051](https://github.com/quarto-dev/quarto-cli/issues/13051)): Fixed support for captioned Markdown table inside Div syntax for crossref. This is special handling, but this could be output by function like `knitr::kable()` with old option support.
 
+## Backwards-compatibility breaking changes
+
+- ([#13104](https://github.com/quarto-dev/quarto-cli/issues/13104)): Remove `posit-cloud` as `quarto publish` destination. See <https://docs.posit.co/cloud/whats_new/#october-2024> for details.
+
 ## Dependencies
 
 - Update `bootstrap-icons` to version v1.13.1 from v1.11.1.
@@ -74,6 +78,10 @@ All changes included in 1.8:
 ### `docusaurus-md`
 
 - [#13316](https://github.com/quarto-dev/quarto-cli/issues/13316): `code-line-numbers: "1"` correctly highlight the first line now.
+
+### `markdown` formats
+
+- ([#12630])(https://github.com/quarto-dev/quarto-cli/issues/12630)): emit image element for `video` shortcodes targeting local videos.
 
 ## Projects
 
